@@ -1,10 +1,11 @@
-    html {
+html {
     font-size: 16px;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -64,6 +65,7 @@ body {
 .cards {
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
 }
 
 .card {
@@ -157,14 +159,9 @@ body {
 
 
 
-
-
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {}
-
-
-
 
 
 
@@ -181,15 +178,74 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
+    .logo>img {
+        width: 35%;
+    }
     .card {
-        width: 34%;
+        width: 43%;
     }
     .cards {
-         flex-wrap: wrap;
-             flex-direction: row;
-       }
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {}
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {}
+    .footer__cards-container {
+        margin-top: 0;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .about {
+        padding: 5%;
+    }
+    .about__stats {
+        padding: 2%;
+    }
+    .logo {
+        text-align: left;
+    }
+    .footer__card {
+        width: 33%;
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .logo {
+        margin: 5%;
+    }
+
+    .logo>img {
+        width: 25%;
+    }
+    .card {
+        padding: 10% 1%;
+        margin: 1%;
+    }
+    .cards {
+        flex-wrap: nowrap;
+    }
+    .card__content1 {
+        height: 5rem;
+    }
+    .footer__cards-container {
+        flex-wrap: nowrap;
+    }
+    .footer__title {
+        width: 25%;
+        padding: 1%;
+    }
+    .about-container {
+        display: flex;
+    }
+    .about__stats {
+        position: static;
+        transform: scale(1.1);
+    }
+}
