@@ -1,0 +1,195 @@
+    html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: #ededed;
+}
+
+.logo {
+    text-align: center;
+    margin: 10%;
+}
+
+.logo>img {
+    width: 70%;
+}
+
+.about {
+    background-color: #474747;
+    color: #c6c6c6;
+    font-size: 1.4rem;
+    padding: 10%;
+    text-align: center;
+}
+
+.about__stats {
+    background-color: #2f549b;
+    color: white;
+    padding: 5%;
+    width: 70%;
+    text-align: center;
+    position: relative;
+    top: -1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0rem 2rem 2rem -1rem grey;
+}
+
+.about__stats>span {
+    flex: 1;
+}
+
+.about__stats-img img {
+    width: 100%;
+}
+
+.about__stats-no {
+    font-size: 3rem;
+    padding: 0 4%;
+}
+
+.about__stats-desc {
+    color: #c6c6c6;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 3%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    padding: 10% 5%;
+}
+
+.card__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card__img img {
+    width: 100%;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2f549b;
+    margin-top: 10%;
+}
+
+.card__content1 {
+    text-align: center;
+    color: #697eb0;
+    border-bottom: 1px solid grey;
+    width: 52%;
+    padding-bottom: 10%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.card__content2 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #5e5e5e;
+    margin-top: 10%;
+}
+
+.card__content3 {
+    text-align: center;
+    color: #cecece;
+    border-bottom: 1px solid;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.footer__title {
+    background-color: #2f549b;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    position: relative;
+    bottom: -1rem;
+    box-shadow: 0rem 2rem 2rem -1rem #2f549b;
+}
+
+.footer__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c6c6c6;
+    padding: 5%;
+    margin-top: 8%;
+}
+
+.footer__card {
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.footer__card:hover {
+    background-color: white;
+}
+
+.footer__card-img img {
+    width: 50%;
+}
+
+.footer__card-content {
+    color: #7d7d7d;
+    margin: 15% 0;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 34%;
+    }
+    .cards {
+         flex-wrap: wrap;
+             flex-direction: row;
+       }
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}
