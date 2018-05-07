@@ -62,6 +62,12 @@ body {
     color: #c6c6c6;
 }
 
+.about-filler {
+    width: 30%;
+    background-color: #474747;
+    display: none;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -73,6 +79,21 @@ body {
     background-color: white;
     border-bottom: 1px solid grey;
     padding: 10% 5%;
+    font-size: 0.8rem;
+    color: #5e5e5e;
+}
+
+.card:hover {
+    background-color: #2f549b;
+    color: lightblue;
+}
+
+.card:hover>.card__content1 {
+    color: white;
+}
+
+.card:hover>.card__title {
+    color: white;
 }
 
 .card__img {
@@ -104,7 +125,7 @@ body {
 .card__content2 {
     text-align: center;
     font-size: 1.3rem;
-    color: #5e5e5e;
+    /*color: #5e5e5e;*/
     margin-top: 10%;
 }
 
@@ -112,9 +133,10 @@ body {
     text-align: center;
     color: #cecece;
     border-bottom: 1px solid;
-    width: 30%;
+    width: 45%;
     margin: 0 auto;
     margin-top: 10%;
+    cursor: pointer;
 }
 
 .footer__title {
@@ -134,34 +156,45 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #c6c6c6;
-    padding: 5%;
+    padding: 3% 1% 0% 1%;
+    ;
     margin-top: 8%;
 }
 
 .footer__card {
-    width: 50%;
-    margin: 5% auto;
+    width: 33%;
+    padding: 3%;
     text-align: center;
+    font-size: 0.8rem;
+    margin: 1% 0;
+    color: #7d7d7d;
 }
 
 .footer__card:hover {
-    background-color: white;
+    background-color: #2f549b;
+    color: white;
 }
+
 
 .footer__card-img img {
     width: 50%;
 }
 
 .footer__card-content {
-    color: #7d7d7d;
-    margin: 15% 0;
+    margin-top: 15%;
 }
+
+
+
 
 
 
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {}
+
+
+
 
 
 
@@ -172,6 +205,9 @@ body {
         font-size: 18px;
     }
 }
+
+
+
 
 
 
@@ -195,6 +231,9 @@ body {
 
 
 
+
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
@@ -208,24 +247,45 @@ body {
         text-align: left;
     }
     .footer__card {
-        width: 33%;
+        /*width: 25%;*/
+    }
+    .content-container {
+        margin: 5% 20% 10% 20%;
+    }
+    .card__title {
+        font-size: 1.5rem;
+    }
+    .card__content2 {
+        font-size: 0.8rem;
     }
 }
+
+
+
 
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .about {
+        padding: 3%;
+    }
     .logo {
-        margin: 5%;
+      margin: 5% 0 3% 20%;
     }
 
     .logo>img {
         width: 25%;
     }
+    .about__stats{
+        width:55%;
+    }
+    .about-filler {
+        display: block;
+    }
     .card {
-        padding: 10% 1%;
+        padding: 3% 1%;
         margin: 1%;
     }
     .cards {
@@ -238,7 +298,7 @@ body {
         flex-wrap: nowrap;
     }
     .footer__title {
-        width: 25%;
+        width: 30%;
         padding: 1%;
     }
     .about-container {
