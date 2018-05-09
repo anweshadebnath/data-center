@@ -81,11 +81,13 @@ body {
     padding: 10% 5%;
     font-size: 0.8rem;
     color: #5e5e5e;
+    transition: all 0.8s;
 }
 
 .card:hover {
     background-color: #2f549b;
     color: lightblue;
+    transform: scale(1.05);
 }
 
 .card:hover>.card__content1 {
@@ -167,6 +169,7 @@ body {
     font-size: 0.8rem;
     margin: 1% 0;
     color: #7d7d7d;
+    transition: all 0.8s;
 }
 
 .footer__card:hover {
@@ -174,6 +177,9 @@ body {
     color: white;
 }
 
+.footer__card:hover > .footer__card-content {
+    font-weight: bold;
+}
 
 .footer__card-img img {
     width: 50%;
